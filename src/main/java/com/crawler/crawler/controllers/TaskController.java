@@ -35,9 +35,8 @@ public class TaskController {
 	}
 	
 	@DeleteMapping(value = "/{id}")
-	public ResponseEntity<ObjectId> delete(@PathVariable ObjectId id){
+	public void delete(@PathVariable ObjectId id){
 		// Not yet implemented
-		return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON_UTF8).body(null);
 	}
 
 }
