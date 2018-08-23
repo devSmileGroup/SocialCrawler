@@ -6,10 +6,14 @@ import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.crawler.crawler.dao.TaskRepository;
 import com.crawler.crawler.models.Task;
 
 @Service
 public class TaskService {
+	
+	@Autowired
+	private TaskRepository taskRepository;
 
 	@Autowired
 	private List<ICrawler> crawlers;
