@@ -21,22 +21,22 @@ public class TaskController {
 
 	@Autowired
 	private TaskService taskService;
-	
+
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Task> read(@PathVariable("id") ObjectId id) {
 		// Not yet implemented
-		return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON_UTF8).body(null);
+		return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON_UTF8).body(taskService.findById(id));
 	}
-	
+
 	@PostMapping
 	public ResponseEntity<ObjectId> create(@RequestBody Task task) {
-		taskService.create(null);
-		return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON_UTF8).body(null);
+		
+		return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON_UTF8).body(taskService.create(task));
 	}
-	
+
 	@DeleteMapping(value = "/{id}")
-	public void delete(@PathVariable ObjectId id){
-		// Not yet implemented
+	public void delete(@PathVariable ObjectId id) {
+		taskService.deleteById(id);
 	}
 
 }

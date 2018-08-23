@@ -19,4 +19,14 @@ public class TaskService {
 		return null;
 	}
 	
+	public Task findById(ObjectId id) {
+		// TODO
+		return null;
+	}
+	
+	public void deleteById(ObjectId id) {
+		// TODO
+	}
+	
+	
 }
