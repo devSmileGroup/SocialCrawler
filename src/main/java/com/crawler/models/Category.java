@@ -1,4 +1,4 @@
-package com.crawler.crawler.models;
+package com.crawler.models;
 
 public enum Category {
 	TWITTER, INSTAGRAM, OLX

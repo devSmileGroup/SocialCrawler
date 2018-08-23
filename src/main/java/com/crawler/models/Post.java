@@ -1,4 +1,4 @@
-package com.crawler.crawler.models;
+package com.crawler.models;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;

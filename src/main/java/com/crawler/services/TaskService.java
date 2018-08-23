@@ -1,4 +1,4 @@
-package com.crawler.crawler.services;
+package com.crawler.services;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.crawler.crawler.dao.TaskRepository;
-import com.crawler.crawler.models.Task;
+import com.crawler.dao.TaskRepository;
+import com.crawler.models.Task;
 
 @Service
 public class TaskService {

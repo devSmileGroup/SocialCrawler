@@ -1,10 +1,10 @@
-package com.crawler.crawler.services;
+package com.crawler.services;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-import com.crawler.crawler.models.Category;
-import com.crawler.crawler.models.Post;
+import com.crawler.models.Category;
+import com.crawler.models.Post;
 
 public interface ICrawler {
 	List<Post> getPosts(String hashtag, LocalDateTime from, LocalDateTime to);

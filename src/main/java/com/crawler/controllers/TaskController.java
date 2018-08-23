@@ -1,4 +1,4 @@
-package com.crawler.crawler.controllers;
+package com.crawler.controllers;
 
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.crawler.crawler.models.Task;
-import com.crawler.crawler.services.TaskService;
+import com.crawler.models.Task;
+import com.crawler.services.TaskService;
 
 @RestController
 @RequestMapping("/tasks")
